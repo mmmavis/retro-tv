@@ -1,0 +1,86 @@
+@import "variables.less";
+
+body {
+  background: @background-black;
+}
+
+.viewport {
+  padding: 5% 6% 5% 6%;
+  height: 76%;
+  width: 66%;
+}
+
+.mw-1080 {
+  max-width: 800px;
+}
+
+.container {
+  margin: 50px auto;
+}
+
+#screen-area {
+  position: absolute;
+  padding-right: 8%;
+  height: 82%;
+  width: 94%;
+  box-sizing: border-box;
+}
+
+#message-for-gvn,
+#video-container {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+#message-for-gvn {
+  font-family: 'VT323', monospace;
+  // font-family: 'Metal Mania', cursive;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  font-size: 14px;
+  z-index: 2;
+  background-image: url(assets/tv-noise.gif);
+  background-size: contain;
+  padding: 5%;
+
+  .submitter {
+    text-align: right;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 2.2rem;
+  }
+}
+
+#video-container {
+  // display: none;
+  .vhs-overlay {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin-top: 9%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

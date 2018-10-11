@@ -1,0 +1,64 @@
+<!-- inspired and modified from https://codepen.io/TGUstudios/pen/BdWagp -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Retro TV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="https://mmmavis.github.io/retro-tv/assets/favicon.png">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="300x300" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="300x300" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania|VT323" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="tv.less" />
+    <link rel="stylesheet/less" type="text/css" href="glitch-effect.less" />
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script type="text/javascript" src="lib/less.min.js" ></script>
+    <script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div class="mw-1080">
+      <div class="container">
+        <div class="viewport">
+          <!-- <img id="gif_vid" class="gif-vid" src=""> -->
+          <div id="screen-area">
+            <div id="message-for-gvn">
+              messages for gvn... <br /><br />
+              click on the channel dial to change channels...
+            </div>
+            <div id="video-container">
+              <div class="resp-container">
+                <iframe class="resp-iframe" src="https://www.youtube.com/embed/PND_Vk9811M?rel=0&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <img class="vhs-overlay" src="assets/vhs-overlay.png">
+            </div>
+          </div>
+
+
+          <!-- <img class="pixels" src="assets/vhs-overlay.png"> -->
+        </div>
+        <img class="tv" src="assets/80s-tv.png">
+        <!-- <img class="tv" src="assets/80s-tv-with-filter.png"> -->
+
+        <button id="mute" class="switch" title="Mute / Unmute"><span></span></button>
+        <button id="hd" class="switch" title="High Def"><span></span></button>
+        <button id="idk" class="switch" title="IDK"><span></span></button>
+        <button id="bright" class="switch" title="Bright / Dark"><span></span></button>
+        <button id="color" class="switch" title="Color / B&W"><span></span></button>
+
+        <button id="channels" class="dile" title="Change the Channels" data-channel-num="0"><span></span></button>
+        <button id="volume" class="dile" title="Volume"><span></span></button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
