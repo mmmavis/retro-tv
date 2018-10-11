@@ -8,7 +8,11 @@
     "message": "goodbye forever gvn! we will miss you!!! 😭"
   },
   {
-    "submitter": "test person 3",
-    "message": "3rd message 123 456 789 beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. "
+    "submitter": "Luke",
+    "message": "Uncaught ReferenceError: [object Object] is not defined"
+  },
+  {
+    "submitter": "Kristina",
+    "message": "You may be gone but your style guide will live on forever"
   }
 ]
